@@ -9682,3 +9682,52 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+.one-third.img {
+  background-position: center top;
+  transform: translateY(30px); /* shift image 30px down */
+}
+.hero {
+  margin-top: -100px; /* adjust value as needed */
+}
+
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 skills per row */
+  gap: 30px;
+  text-align: center;
+}
+
+.skill-item img {
+  width: 80px; /* adjust logo size */
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsive: Tablets → 2 per row */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: Mobiles → 1 per row */
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
